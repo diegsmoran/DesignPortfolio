@@ -40,9 +40,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
-	line-height: 1;
-}
 
 ol, ul {
 	list-style: none;
@@ -203,6 +200,7 @@ input, select, textarea {
 	}
 
 	ul, ol, dl, table, blockquote {
+	
 		margin-bottom: 2em;
 	}
 
@@ -1539,8 +1537,16 @@ input, select, textarea {
 
 /* Sections/Article */
 
+section {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 	section, article {
 		margin-bottom: 3em;
+		text-align: center;
+
+
 	}
 
 	section > :last-child,
@@ -1674,8 +1680,10 @@ input, select, textarea {
 
 	ul.divided {
 		list-style: none;
-		padding-left: 0;
+		margin-left: auto;
+		margin-right: auto;
 		text-align: center;
+		justify-content: center;
 	}
 
 		ul.divided li {
@@ -2245,7 +2253,7 @@ input, select, textarea {
 			}
 
 				#banner > .container {
-					padding: 0 4em;
+					padding: 2em 4em;
 				}
 
 					#banner > .container br {
@@ -2255,7 +2263,9 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 4em 0;
+				padding-top: 4em;
+				padding-bottom: 6em;
+		
 			}
 
 		/* Footer */
@@ -2280,6 +2290,8 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 980px) {
+
+
 
 		/* Basic */
 
@@ -2596,3 +2608,5 @@ input, select, textarea {
 			#content > article {
 				margin: 3em 0 0 0;
 				padding: 3em 0 0 0;
+			}
+		}
