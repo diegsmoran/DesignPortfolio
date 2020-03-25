@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inria+Sans&family=Julius+Sans+One&family=Noto+Sans+HK:wght@900&family=Odibee+Sans&family=Pathway+Gothic+One&display=swap');
 
 /*
 	Strongly Typed by HTML5 UP
@@ -111,7 +112,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
-		text-transform: uppercase;
+		
 		color: #888;
 	}
 
@@ -1566,6 +1567,7 @@ section {
 		display: inline-block;
 		border: solid 6px #ebebeb !important;
 	}
+	
 
 		.image:hover {
 			opacity: 0.9;
@@ -1880,13 +1882,20 @@ section {
 		margin-bottom: 0;
 	}
 
+	/* monogram */
+
+	#monogram {
+		float: left;
+		width: 50%;
+		height: auto;
+	}
 /* Header */
 
 	#header {
 		position: relative;
 		position: relative;
-		background: rgb(238,174,202);
-		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+		background-image: linear-gradient(-225deg, #2CD8D5 0%, rgb(92, 107, 106) 50%, rgb(100, 103, 104) 100%);
+		background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 		text-align: center;
 	}
 
@@ -1897,12 +1906,13 @@ section {
 		}
 
 		#header h1 {
-			font-family: 'Arvo';
-			font-weight: 700;
+			font-family: "odibee sans", "Noto Sans HK", "arvo" ;
+			font-weight: 500;
 			color: #ffffff;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-			font-size: 3em;
-			letter-spacing: 15px;
+			font-size: 2em;
+			letter-spacing: 20px;
+			text-transform: uppercase;
 		}
 
 
@@ -1913,12 +1923,72 @@ section {
 		#header p {
 			text-transform: uppercase;
 			font-weight: 400;
-			color: rgb(186, 207, 213);
+			color: rgb(236, 247, 250);
 			margin: 2.5em 0 0 0;
 			font-size: 0.85em;
 			letter-spacing: 4px;
 			text-align: center;
 		}
+
+		/* Banner */
+
+	#banner {
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		color: #fff;
+		text-align: center;
+		border-top: solid 2px #e5e5e5;
+		border-bottom: solid 2px #e5e5e5;
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
+		position: relative;
+		text-transform: uppercase;
+		background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+		background-size: cover;
+		padding: 10em 0;
+		font-family: "odibee sans", "Noto Sans HK", "arvo" ;
+	}
+
+		#banner p {
+			font-weight: 400;
+			font-size: 2em;
+			line-height: 1.5em;
+			letter-spacing: 4px;
+			text-align: center;
+			margin: 0;
+		}
+
+		#banner strong {
+			color: inherit;
+		}
+
+		#banner > .container {
+			position: relative;
+		}
+
+			#banner > .container:before, #banner > .container:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				width: 35px;
+				height: 141px;
+				margin-top: -70px;
+				background: url("images/bracket.svg");
+				opacity: 0.15;
+			}
+
+			#banner > .container:before {
+				left: 0;
+			}
+
+			#banner > .container:after {
+				-moz-transform: scaleX(-1);
+				-webkit-transform: scaleX(-1);
+				-ms-transform: scaleX(-1);
+				transform: scaleX(-1);
+				right: 0;
+			}
 
 /* Nav */
 
@@ -2079,68 +2149,7 @@ section {
 			margin-top: 1.25em;
 		}
 
-/* Banner */
 
-	#banner {
-		position: relative;
-		overflow: hidden;
-		background: #fff;
-		color: #fff;
-		text-align: center;
-		border-top: solid 2px #e5e5e5;
-		border-bottom: solid 2px #e5e5e5;
-		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
-		position: relative;
-		text-transform: uppercase;
-		background: rgb(2,0,36);
-		background: rgb(103, 108, 109);
-		background-size: cover;
-		padding: 10em 0;
-	}
-
-	
-
-
-		#banner p {
-			font-weight: 400;
-			font-size: 2em;
-			line-height: 1.5em;
-			letter-spacing: 4px;
-			text-align: center;
-			margin: 0;
-		}
-
-		#banner strong {
-			color: inherit;
-		}
-
-		#banner > .container {
-			position: relative;
-		}
-
-			#banner > .container:before, #banner > .container:after {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				width: 35px;
-				height: 141px;
-				margin-top: -70px;
-				background: url("images/bracket.svg");
-				opacity: 0.15;
-			}
-
-			#banner > .container:before {
-				left: 0;
-			}
-
-			#banner > .container:after {
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-				right: 0;
-			}
 
 /* Main */
 
