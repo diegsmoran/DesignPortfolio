@@ -1909,7 +1909,7 @@ section {
 			font-family: "odibee sans", "Noto Sans HK", "arvo" ;
 			font-weight: 500;
 			color: #ffffff;
-			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+			text-shadow: 0.00em 0.1em 0 rgba(106, 189, 228, 0.6);
 			font-size: 2em;
 			letter-spacing: 20px;
 			text-transform: uppercase;
