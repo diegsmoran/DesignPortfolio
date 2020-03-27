@@ -232,12 +232,13 @@ input, select, textarea {
 	background-color: transparent;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	width: 50%;
 	border: none;
 	-webkit-animation-name: zoom;
 	-webkit-animation-duration: 0.3s;
 	animation-name: zoom;
 	animation-duration: 0.3s;
+	text-align: center;
   }
   
   @-webkit-keyframes zoom {
