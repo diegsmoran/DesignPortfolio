@@ -1899,7 +1899,7 @@ section {
 		position: relative;
 		position: relative;
 		background-image: linear-gradient(-225deg, #2CD8D5 0%, rgb(92, 107, 106) 50%, rgb(100, 103, 104) 100%);
-		background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+		background-image: linear-gradient(to right, #243949 0%, #283f52 100%);
 		text-align: center;
 	}
 
@@ -1947,7 +1947,7 @@ section {
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
 		position: relative;
 		text-transform: uppercase;
-		background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+		background-image: linear-gradient(to right, #243949 0%, #3d586d 100%);
 		background-size: cover;
 		padding: 10em 0;
 		font-family: "odibee sans", "Noto Sans HK", "arvo" ;
